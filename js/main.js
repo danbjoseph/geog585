@@ -71,7 +71,7 @@ var pointsGroup = svg.append('g').attr("id", "points");
 var fc, mappedPts, mapBounds;
 
 function getSurveyData() {
-  d3.csv("data/survey-data2.csv", function(surveyData){
+  d3.csv("data/survey-data.csv", function(surveyData){
 
     function reformat(array) {
       var data = [];
