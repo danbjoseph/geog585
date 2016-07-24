@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid noPadding">
+      <div class="col-xs-8 noPadding">
+        <div id="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="col-xs-4 noPadding">
+        <div id="infoWrapper">
+          <div id="emptymessage">
+            Please select an area containing points.
+          </div>
+          <div id="stats">
+            <h4><span id="totalpoints"></span> points selected</h4>
+            <h5>Age of respondent</h5>
+            <p>
+              <b>Min: </b><span id="agemin"></span><br>
+              <b>Max: </b><span id="agemax"></span><br>
+              <b>Mean: </b><span id="agemean"></span><br>
+              <b>Median: </b><span id="agemedian"></span><br>
+              <b>Standard deviation: </b><span id="agestandarddeviation"></span>
+            </p>
+            <h5>Number in respondent's family</h5>
+            <p>
+              <b>Min: </b><span id="numbermin"></span><br>
+              <b>Max: </b><span id="numbermax"></span><br>
+              <b>Mean: </b><span id="numbermean"></span><br>
+              <b>Median: </b><span id="numbermedian"></span><br>
+              <b>Standard deviation: </b><span id="numberstandarddeviation"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="//api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
+<script src="https://npmcdn.com/simple-statistics@2.0.0/dist/simple-statistics.min.js"></script>
+<script src="js/leaflet.draw.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>
