@@ -11,6 +11,9 @@ html, body {
 .noPadding {
   padding: 0px;
 }
+.pt {
+  fill-opacity: 0.8;
+}
 .pt.inside {
   fill: #ed1b2e;
 }

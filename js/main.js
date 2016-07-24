@@ -96,7 +96,7 @@ function getSurveyData() {
     // add a circle to the svg markers group for each survey point
     mappedPts = pointsGroup.selectAll("circle")
       .data(fc.features)
-      .enter().append("circle").attr("r", 5)
+      .enter().append("circle").attr("r", 3)
       .attr('class','pt');
     // when map view changes adjust the locations of the svg circles
     function update(){
